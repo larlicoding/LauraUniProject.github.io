@@ -1,0 +1,544 @@
+<!DOCTYPE html> <!-- tells browser we are working with html -->
+<html lang="en"> <!-- browser needs to know language to help people such as those with a disability -->
+<head>
+    <meta charset="UTF-8">  <!-- tells browser using default char type -->
+    <meta name="viewport" content="width=device-width, initual-scale=1.0"> <!-- tells browser to fit webpage to screen (device width) -->
+    <link rel="stylesheet" href="websystems.css">
+    <title>COMMENTS</title> <!-- text inside browser tab -->
+
+    <body>
+        <!-- Index Navbar -->
+        <nav class="index-navbar">
+          <div class="logo">
+            <img src="images/UTSLogo.png" alt="UTSLogo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="past.html" >PAST</a></li>
+            <li><a href="future.html">FUTURE</a></li>
+            <li><a href="comments.html"id="active">COMMENTS</a></li>
+          </ul>
+        </nav>
+      
+        <header>
+          <h1> Comments 💬</h1>
+        </header>
+      
+        <main class ="commentsmain">
+          <div class="section">
+            <h2>Website Reflection</h2>
+            <div class="row">
+              <div class="col1">
+                <div class="commentsbox">
+                  <h2>Purpose</h2>
+                    <p> 
+                        The main purpose of my website is to give readers a little introduction about myself, where I share my interests and hobbies, including my past and future experiences with technology. My design consists of a simplistic layout of rows and columns which I utilised in order to prevent overcomplication, making it easy to navigate through the code when styling with CSS. I also did this in order to make it easier for less tech-savvy viewers to navigate through my site. I further used a neutral color palette in order to make the site easy to read without causing eye strain. Overall, the site functions as intended, with elements working properly when viewed via both mobile and desktop resolutions. 
+                    </p>
+                    <p>
+                        My site was very time consuming to construct as I had extremely poor HTML formatting at the start, where things were not working as intended due to missing or misaligned ending tags. Once I reformatted the site, it become much easier to navigate and read through the code, with functions working as intended. One thing that I believe could have been improved is the naming of classes. I have a few classes with odd names such as "childhoodparagraph" and "object1", which in the case of a small project did not cause many issues. However, if my website was to be more complex or improved further down the line, it has the potential to become a problem as it may cause larger issues such as mistakes when writing code due to not knowing which classes correspond with each page, leading to a waste of time. 
+                    </p>
+
+                    <h2>Technical Aspects</h2>
+                    <p>
+                        In accordance with the task rules, my site has been constructed using the following structure:
+                    </p>
+                    <table class="SiteStructure">
+                        <tr>
+                            <th>FILE NAME</th>
+                            <th>FILE TYPE</th>
+                            <th>DESCRIPTION</th>
+                        </tr>
+                        <tr>
+                            <td>websystems</td>
+                            <td>folder</td>
+                            <td>This is the main folder which contains all other HTML and CSS files, as well as an images folder.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>images</td>
+                            <td>folder</td>
+                            <td>This is a sub folder inside the websystems folder which contains all image files.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>index.html</td>
+                            <td>HTML</td>
+                            <td>This is the home page of the site. Users are prompted with this screen upon arrival. This file is inside the websystems folder.</td>
+                        </tr>
+                       
+                        <tr>
+                            <td>past.html</td>
+                            <td>HTML</td>
+                            <td>This is the past page, which discusses my past experiences with technology from childhood, school to adulthood. This file is inside the websystems folder.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>future.html</td>
+                            <td>HTML</td>
+                            <td>This is the future page, which discusses my future ambitions and career in technology. This file is inside the websystems folder.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>comments.html</td>
+                            <td>HTML</td>
+                            <td>This is the page you are currently viewing, which discusses the creation of this site. This file is inside the websystems folder.</td>
+                        </tr>
+
+                        <tr>
+                            <td>websystems.css</td>
+                            <td>CSS</td>
+                            <td>This is the stylesheet which styles the webpage through formatting, colour, etc. This file is inside the websystems folder.
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <h3>All Pages</h3>
+                    <p>
+                        Each webpage begins with the default HTML code, defined by: <br/>
+                        <code>&lt;!DOCTYPE html&gt;:</code> This tells the browser we are working with HTML and HTML file types.
+                        <br/>
+                        <code>&lt;html lang="en"&gt;: </code> This defines the browser language to English, which can help people such as those with a disability using text to speech, more about that later.
+                        <br/>
+                        <code>&lt;meta charset="UTF-8"&gt; </code> This tells the browser to use the default charater type.
+                        <br/>
+                        <code>&lt;meta name="viewport" content="width=device-width, initual-scale=1.0"&gt; </code> This tells the browser to fit the webpage to screen (user device width) and sets the scale to be full resolution (1.0). Note this code does not need an ending tag.
+                        <br/>
+                        <code>&lt;link rel="stylesheet" href="websystems.css"&gt;</code> This links each HTML page to the CSS stylesheet.
+                        <br/>
+                        <code>&lt;title&gt;COMMENTS&lt;/title&gt;</code> This is the text inside the browser tab. Each tab a different title, labelled "PAST", "COMMENTS", "FUTURE", INDEX".
+                    </p>
+
+                    <p>
+                            The layout of each page consists of a navbar, header and footer. The navbar is defined by a class - <code>&lt;nav class="index-navbar"&gt;</code> It consists of a div with an image (UTS logo) <code>&lt;img src="images/UTSLogo.png" alt="UTSLogo"&gt;</code> and an unordered list classed “nav-links”, which was used to contain a list of the hypertext referenced links to all other HTML pages.         
+                        <br/>
+                            HTML: <br/>
+                            <code>&lt;ul class="nav-links"&gt;</code><br>
+                            <code>&lt;li&gt;&lt;a href="index.html"&gt;HOME&lt;/a&gt;&lt;/li&gt;</code><br>
+                            <code>&lt;li&gt;&lt;a href="past.html"&gt;PAST&lt;/a&gt;&lt;/li&gt;</code><br>
+                            <code>&lt;li&gt;&lt;a href="future.html"&gt;FUTURE&lt;/a&gt;&lt;/li&gt;</code><br>
+                            <code>lt;li&gt;&lt;a href="comments.html" id="active"&gt;COMMENTS&lt;/a&gt;&lt;/li&gt;</code><br>
+                            <code> &lt;/ul&gt;</code>
+                    </p>
+
+                    <p>
+                        The navbar is further styled in CSS utilising the following properties: <br/>
+                        <code>.index-navbar {</code> <br/>
+                            <code>background-color: #e1f2f7;</code> <br/>
+                            <code>width: 100%; </code> <br/>
+                            <code>display: flex; </code>This enables flexbox layout allowing for hyperlinks and image position to be adjusted accordingly in rows. 
+                            <br/>
+                            <code>justify-content: space-between; </code> This spaces the text and logo out evenly on the left and right. <br/>
+                            <code> align-items: center; </code> puts text and UTS logo image in the middle of the navbar. <br/>
+                            <code>padding: 10px 20px; </code> This will add an inner border of space inside the navbar. <br/>
+                            <code>flex-wrap: wrap; </code> this allows for the text to wrap around the logo when there is no longer any space available once the screen is resized. <br/>
+                            <code>border-bottom: 2px solid #eb3a70; } </code> adds a hot pink coloured border to the bottom of the navbar. This creates an aesthetic separation between the navbar and header. More on aesthetics will be covered further down the comments section. <br/>
+                    </p>
+
+                    <p>           
+                        The list is also styled to override default list ordering settings (eg. 1. Home, 2. Past, etc) using <code>list-style: none;</code>. It is also assigned with <code>display: flex</code>, which positions the text on the main axis (x axis) side by side. A margin of 20px; is further added to the list to add space between each word and <code>overflow-x: visible</code> is applied to override the default setting and show text in case it overflows due to a screen resize. Each web page has an id element “active” corresponding to itself, highlighting that the user is actively on the corresponding webpage by colouring the text red through CSS styling. There is also a red hover effect over each navigation hyperlink made using an ease-in-out transition of 0.5s.
+                        <br/>
+                        HTML: <code>&lt;li&gt;&lt;a href="comments.html" id="active"&gt;COMMENTS&lt;/a&gt;&lt;/li&gt;</code> 
+                        <br/>
+                        CSS: 
+                        <code>
+                            index-navbar .nav-links #active {
+                            color: #ef0d50; }
+                            <br/>
+                        </code>
+                        Hover Effect: <br/>
+                        <code> .index-navbar .nav-links li a:hover { <br/>
+                                color: #ef0d50; <br/>
+                                transition: ease-in-out 0.5s; }
+                        </code>
+                    </p>
+
+                    <p>
+                        
+                        The header is the same on every page, utilising <code>&lt;h1&gt;</code> tags to name each hyperlink. It is styled with CSS with the following properties below such as font-wight and text-allign to add emphasis to the text by making it stand out with large, centered and bold letters. It also applies a padding of 25px to add inner space between the heading and its text element.  
+                        <br/> <code>
+                        background-color: #f7e6e1; <br/> 
+                        text-align: center; <br/> 
+                        padding: 25px; <br/> 
+                        font-family: sans-serif; <br/> 
+                        font-weight: bold; <br/> 
+                        width: 100%; <br/> 
+                        </code>
+                    </p>
+                        
+                    <p>
+                        Like the header, the footer is the same on every page, styled in CSS with the same properties except changing the colour to complement the navigation bar. The only difference in property is the addition of font-family: Segoe UI to complement the rest of the site. 
+                        <br/> <code>
+                            background-color: #f7e6e1; <br/>
+                            text-align: center; <br/>
+                            padding: 20px; <br/>
+                            font-size: large; <br/>
+                            font-family: Segoe UI, sans-serif; <br/>
+                            font-weight: bold; <br/>
+                            width: 100%; <br/>
+                            </code>  
+                    </p>
+                    
+                    <h3>Default CSS Settings</h3>
+                    <p>
+                        As I am using the flexbox element to style my webpage (more on that in a moment), I chose to override default (*) browser settings.
+                        <code><br/>
+                            * { <br/>
+                            margin: 0; </code> This setting overrides default margin browser setting of 8px <br/>
+                            <code>padding: 0;</code> This ensures that default padding is set to 0. <br/> 
+                            <code>box-sizing: border-box;</code> This setting includes any element's border and padding in the total width and height. This was done in order to be able to make even spaces using padding between elements such as headings, paragraphs and images. <br/>
+                            <code>overflow-x: hidden; } </code> This fixes horizontal scrolling (x), also hides any elements flowing off the screen by default 
+                            <br/> I also set default settings for the body of each webpage:<br/>
+                        <code>body { <br/>
+                            display: flex; </code> This will enable flexbox, creating a vertical and horizontal axis for elements. <br/>
+                            <code>flex-direction: column;</code> this will set the main axis to the y axis and position all elements within the body to stack vertically. <br/>
+                            <code>align-items: center; }</code> The webpage is designed to be symmetrical in order to achieve simplicity and make it easier to read. 
+                    </p>
+
+                    <h3>Flexbox Layout</h3>
+                    <p>
+                        As previously mentioned, I chose to use the CSS flexbox styling elements and HTML div classes to create the layout for the main content of my website. I created a div classed "section," which contains 2 child classes "row" and "col", which act as rows and columns for styling elements inside the webpage. The CSS style elements for rows and columns are: 
+                        <br/>
+                        <code>
+                        .row { <br/>
+                        display: flex; </code> Creates a vertical and horizontal axis as previously mentioned. <br/>
+                        <code>flex-wrap: nowrap; </code> Does not allow wrapping of any elements. <br/>
+                        <code>justify-content: center; </code> Centre items in the middle of the x axis. <br/>
+                        <code>align-items: center;</code> Centres elements in the middle of the cross axis (centre of screen). <br/>
+                        <code>width: 100%; }</code> Takes up 100% of the screen width.
+                        <br/><br/>
+                        <code>
+                            .col { <br/>
+                        display: flex;</code> same as above.<br/>
+                        <code>justify-content: center;</code> same as above. <br/>
+                        <code>width: 50% } </code> Takes up 50% of the screen width.<br/>
+                    </p>
+
+                    <h3>Flexbox Example</h3>
+                        <div class="section">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="flexboxexample">
+                                        <p>row 1, column 1</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="col">
+                                    <div class="flexboxexample">
+                                        <p>row 1, column 2</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col">
+                                    <div class="flexboxexample">
+                                        <p>row 1, column 3</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="col">
+                                    <div class="flexboxexample">
+                                        <p>row 1, column 4</p>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="row">
+                              <div class="col">
+                                <div class="flexboxexample">
+                                    <p>row 2, column 1</p>
+                                </div>
+                              </div>
+                              
+                              <div class="col">
+                                <div class="flexboxexample">
+                                    <p>row 2, column 2</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <br/>
+                    
+                    <h3>Page Structure Using Flexbox</h3>
+                    <p>
+                        Using the flexbox concept, I created the index page with the same structure, using divs to create one row and 3 columns. The divs are styled under a new div class as a child of the column div named "object3".
+                        <br/>
+                        <code>&lt;div class="section"&gt;</code> <br/>
+                        <code class="invisible">.</code>
+                        <code>&lt;div class="row"&gt;</code> <br/>
+                        <code class="invisible">..</code>
+                        <code>&lt;div class="col"&gt;</code> <br/>
+                        <code class="invisible">...</code>
+                        <code>&lt;div class="object3"&gt;</code>  <br/>
+                        <br/>
+                        
+                        <code class="invisible">.</code>
+                        <code>&lt;div class="col"&gt;</code> <br/>
+                        <code class="invisible">..</code>
+                        <code>&lt;div class="object3"&gt;</code>  <br/>
+                        <br/>
+
+                        <code class="invisible">.</code>
+                        <code>&lt;div class="col"&gt;</code> <br/>
+                        <code class="invisible">..</code>
+                        <code>&lt;div class="object3"&gt;</code>
+                        <br/>
+
+                    </p>
+
+                    <p>
+                        The past and future pages have the exact same layout, using a section div containing a row div and a div called "ChildhoodParagraph" to contain a block of text and an image beside it. It essentially acts as the column div, with a different name due to styling differences. Underneath this, more divs are defined by div "row" with two div "col"s , with a third div named "object1" as the child to the column div used to apply style elements.
+                        <br/>
+                        <code>&lt;div class="section"&gt;</code> <br/>
+                        <code class="invisible">.</code>
+                        <code>&lt;div class="row"&gt;</code> <br/>
+                        <code class="invisible">..</code>
+                        <code>&lt;div class="ChildhoodParagraph"&gt;</code> <br/><br/>
+                        Note: Inside div "ChildhoodParagraph" are elements such as paragraphs, headings and images.
+                        <br/><br/>
+
+                        <code>&lt;div class="section"&gt;</code> <br/>
+                        <code class="invisible">.</code>
+                        <code>&lt;div class="row"&gt;</code> <br/>
+                        <code class="invisible">..</code>
+                        <code>&lt;div class="col"&gt;</code> <br/>
+                        <code class="invisible">...</code>
+                        <code>&lt;div class="object1"&gt;</code>  <br/><br/>
+                        Note: Inside div "object1" are elements such as paragraphs, headings and images.
+                    </p>
+
+                    <h3>Changing Resolution - Use of @media</h3>
+                    <p>
+                        One of the requirements was for the page to properly resize for viewers on smaller screen sizes such as small monitors, tablets or mobile devices. I achieved this utilising the @media element in CSS combined with the "row" and "col" divs. I assigned the following properties:
+
+                        <br/>
+                        <code>@media (max-width: 900px) { </code>
+                        <br/>
+                        <code class="invisible">.</code><code>.row { </code> 
+                        <br/>
+                        <code class="invisible">..</code><code>flex-direction: column; } </code> When the page rescales to less than 900px, the container layout will stack all rows into columns.
+                        <br/>
+                        <code class="invisible">.</code><code>.main { </code> 
+                        <br/>
+                        <code class="invisible">..</code><code>width: 100% } </code> Sets the width of <code>&lt;main&gt;</code> to 100%, ensuring all elements inside it take up the whole screen space.
+                        <br/>
+                        <code class="invisible">.</code><code>.col { </code> 
+                            <br/>
+                            <code class="invisible">..</code><code>width: 100% } </code> Sets the width of <code>&lt;div&gt; col</code> to 100%, ensuring it takes up the whole screen space.
+                            <br/>
+                            <code>}</code>
+                    </p>
+
+                    <h2>Aesthetics</h2>
+                    <p>
+                        The aesthetic that I was going for for this website was minimalistic, using a neutral colour palette with minimal items on the screen. I wanted the site to be easy to read, hence the choice of these colours. I created the colour using a tetratic colour combination from the light blue colour. The images below depict the main colours which were used for the header, footer, navbar and boxes containing information on the past, index and future pages. Other colours such as a pinkish red and hot pink were also used for hover elements to complement the neutral colour palette. This is depicted in the second image below.
+                    </p>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="aestheticimages">
+                                <img src="images/colorwheel.png" id="ColorWheel" alt="ColorWheelImg"> 
+                            </div>
+                            <div class="col">
+                                <div class="aestheticimages">
+                                    <img src="images/colorpalette.png" id="ColorWheel" alt="ColorPaletteImg"> 
+                                </div>
+                            </div>    
+                        </div>
+                    </div>    
+                    <!-- Color wheel - color theory and calculator | Canva Colors. (2024). Canva’s Design Wiki. https://www.canva.com/colors/color-wheel/ -->
+                
+                    <h2>Index Page</h2>
+                    <p>
+                        Furthermore, each page was created to complement one another, following the neutral palette colour scheme and designed through a minimalistic approach. The index page, consisting of 3 container boxes of information and images was styled using the following properties:
+                       <br/>
+                        <code>.col .object3 { </code> 
+                        <br/>    
+                        <code>background-color: #f7e6e1;</code> <span style="color: #f7e6e1; background-color: black; border-radius: 5px;"><b>This</b></span> colour is complementary to the navbar, which creates a higher contrast brings more vibrance to the page. As the "index" page is the home page of the website, I thought it would be more appropriate to use complementary colours to capture the viewer's attention and establish the theme of minimalism and simplicity.
+                        <br/><br/>
+                        <code>border-width: 5px;</code> This creates a border-width of 5 pixels.
+                        <br/>
+                        <code>border-color: #eb3a70;</code> This sets the border-colour to be a <span style="color: #eb3a70;"><b>hot pink colour.</b></span>
+                        <br/>
+                        <code>border-radius: 50px;</code> This will round the corners of each box, including images. Studies have revealed that rounded corners are "psychologically associated with a sense of safety, approachability and friendliness." (Turner, L, 2022, April 7.) 
+                        <!-- Turner, L. (2022, April 27). Why Do We Have Rounded Corners in Website Design? Logic Design. https://www.logicdesign.co.uk/blog/why-do-we-have-rounded-corners-website-design/#:~:text=Rounded%20corners%20are%20psychologically%20associated,and%20responsive%20to%20this%20shape. -->
+                        <br/> 
+                        <code>margin: 10px;</code> Sets a margin of 10px, creating outer space between elements on the page.
+                        <br/>
+                        <code>height: auto;</code> The height of each box will automatically resize when it is about to run out of space, meaning that a set height does not have to be set for each box. This ensures that the page is visually appealing by having no items running off the screen, or vertical/horizontal scrolling occurring.
+                        <br/>
+                        <code>width: 100%;</code> This makes the box take up 100% of the width of the <code>&lt;main&gt;</code> area, which is set to 80%.
+                        <br/>
+                        <code>transition: ease-in-out 0.5s;</code> Accompanied with a hover element with a light grey shadow, this will create a 0.5s transition between hovering over the container box. This makes the page more aesthetically pleasing for viewers due to the nice addition of an satisfying interactive element. 
+                        <br/>
+                        <code>display: flex;</code> As previously mentioned, this enables flexbox layout, allowing for images and text to be adjusted accordingly in rows and columns.
+                        <br/>
+                        <code>flex-direction: column;</code> This specifies that the direction of flexible items such as images and text will be in a column layout as opposed to a row. Since I have used 3 boxes, they will appear next to each other horizontally as opposed to stacking on top of one another.
+                        <br/>
+                        <code>align-items: center; }</code> Aligns all items in the centre of the box container.
+                    </p>
+
+                    <p>
+                        Furthermore, the images on the index page complement the container box in order to uphold the neutral, minimalist aesthetic. They have the exact same properties, however using diferent ID names in the event that I wanted to change any features later down the line. They are styled with the following properties: 
+                        <br/><br/>
+                        <code>.col .object3 #IndexImgProperties {</code>
+                        <br/>
+                        <code>width: 50%;</code> This makes the images smaller, creating an appropriate image-to-text size ratio. It would be innapropriate to have large images overpowering the text or vise versa, as this would cause distractions on the webpage, which would not be a minimalist approach. This would also be considered poor web design. 
+                        <br/>
+                        <code>flex-shrink: 0;</code> This feature will not wrap the content, meaning it will keep the image's size by retaining its width in the event of rescaling.
+                        <br/>
+                        <code>border-radius: 30px;</code> As previously mentioned, this will ruond the corners of each image, upholding the webpage style.
+                        <br/>
+                        <code> border-width: 50px;</code> This will set a border width of 50px.
+                        <br/>
+                        <code>box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); </code> This creates a shadow behind the image, giving the illusion that it pops off the page.
+                        <br/>
+                        <code>margin-bottom: 30px; }</code> This creates space betwee the bottom of the "object3" box and the image, utilising clean space to avoid element clutter.
+                        <br/><br/>
+                        The <code>&lt;p&gt;</code> element is also styled in CSS to complement the image, with the <code>font-size: 17px; </code> and <code>text-align: center;</code> properties applied to it.
+                    </p>
+
+                    <h2>Past and Future Pages</h2>
+                    <p>
+                        The past and future pages have been styled in CSS using almost the exact same properties, except with the exception of minor colour changes. The layout changes slightly, as previously explained above, with text and an image, then two boxes underneath containing more text and an image each.
+                        <br/><br/>
+                        The CSS code for the image and text boxes is:
+                        <br/>
+                        <code> .section {</code>
+                        <br/>
+                        <code>padding: 10px 0px 10px 0px;</code> Creates inner space within the .section class.
+                        <br/>
+                        <code>margin-left: 2vw;</code> Sets the margin on the left for content inside the .section class to the viewport width.
+                        <br/>
+                        <code>margin-right: 2vw;</code> Sets the margin on the right for content inside the .section class to the viewport width.
+                        <br/>
+                        <code>display: flex;</code>
+                        <br/>
+                        <code>flex-direction: column;</code>
+                        <br/>
+                        <code>align-items: center; }</code>
+                        <br/><br/>
+                        <code>.section h2 {</code>
+                        <br/>
+                        <code>padding: 15px 0px 15px 0px;</code> Creates inner space for the heading 2 element within the .section class.
+                        <br/>
+                        <code>width: 100%; </code>
+                        <br/>
+                        <code>text-align: center;</code>
+                        <br/>
+                        <code>font-family: Segoe UI, sans-serif;</code> ensures that the font and font style is the same throughout the whole site. The use of sans-serif also fits the soft website style, as it gets rid of small harsh lines attached to letters.
+                        <br/>
+                        <code>font-weight: bold; }</code>
+                        
+                        <br/><br/>
+                        <code>.section p {</code>
+                        <br/>
+                        <code>font-family: Segoe UI, sans-serif; }</code> same as above.
+                        <br/><br/>
+
+                        <b>Plain Paragraph and Image</b>
+                        <br/>
+                        <code>.section .ChildhoodParagraph {</code> This is the paragraph at the top of both pages.
+                        <br/>
+                        <code>margin-top: 20px;</code> Creates outer space between the text element and other elements on the page.
+                        <br/>
+                        <code>font-size: 20px;</code> Sets the text font to an appropriate size in relaton to the image next to the text.
+                        <br/>
+                        <code>width: auto;</code> In the case of screen resizing, the width of the text will automatically resize and fill as much as space as it needs.
+                        <br/>
+                        <code>border-style: none;</code> I wanted to achieve the look of simple, plain black text on a white background with no other elements, therefore achieving minimalism.
+                        <br/>
+                        <code>flex: 1; }</code> allows the paragraph to take up the remaining screen space by wrapping in the event of screen resizing.
+                        
+                        <br/><br/>
+                        <code>#supertuxImg {</code> This SuperTux image on the past page was specifically chosen for this part of the webpage as the various shades of blue complement the colours of the webpage, which makes the image pop by adding more vibrance to the page.
+                        <br/>
+                        <code>max-width: 100%;</code> Indicates that the max width of the SuperTux image is 100%.
+                        <br/>
+                        <code>width: 50%;</code> Sets the width of the image to 50%, which is appropriate sizing in relation to the font size.
+                        <br/>
+                        <code>border-radius: 30px; }</code>  Rounds the corners of the image to match the rest of the site.
+                        <br/><br/>
+                        Other images such as the Cybersecurity image and Learning to Code image were also strategically used to match the colour theme, as they both contain blue and purple/pink accents.
+                        All other images have the same image properties as explained above, with minor width % changes to account for difference in image dimensions.
+
+                    </p>
+
+                    <p>
+                        <b>Container Boxes (Bottom of Past and Future Pages)</b>
+                        <br/><br/>
+
+                        <code>.col .object1 { </code>
+                        <br/>
+                        <code>background-color: #F7E1F2;</code> This changes the colour of the box containers to a <span style="color: #F7E1F2; background-color: black; border-radius: 5px;" ><b>light pink</b></span> colour, which is the same colour as the header. As the (object1) container boxes are underneath a box of plain text and an image, I felt it was appropriate to use this colour as it is further down on the page, as it adds a sense of uniqueness from the index page, however still using a neutral colour palette. All other properties below have already been explained.
+                        <br/>
+                        <code>border-width: 5px;</code>
+                        <br/>
+                        <code>border-radius: 50px;</code>
+                        <br/>
+                        <code>margin: 10px;</code>
+                        <br/>
+                        <code>height: auto;</code>
+                        <br/>
+                        <code>width: 100%;</code>
+                        <br/>
+                        <code>transition: ease-in-out 0.5s;</code>
+                        <br/>
+                        <code>display: flex;</code>
+                        <br/>
+                        <code>flex-direction: column;</code>
+                        <br/>
+                        <code>align-items: center;}</code>
+                        <br/><br/>
+                        There is also a hover animation which is applied to both boxes:
+                        <br/>
+                        <code>.col .object1:hover { </code>
+                        <br/>
+                        <code>box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); </code> same as mentioned earlier, gives a shadow to the boxes when hovered.
+                        <br/>
+                        <code>transition: ease-in-out 0.5s; }</code> same as mentioned earlier.
+                    </p>
+
+                    <h2>Accessibility</h2>
+                    <p>
+                        As there is no audio content on my web page, a person with hearing disability would not have any issues in using my site. Therefore, I have constructed my site with accessbility in mind, specifically with the main focus being to cater for visually impaired people. To begin with, I have utilised a larger font size in order to make the text easier for visually impaired people to read without having to zoom in on the page. I have consistently used this over the entire site, ranging from the navbar and headers to informative content within each box container using a <code>font-size: large;</code> property in CSS. Below is an example of this on the past page:
+                    </p>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="aestheticimages">
+                                    <img src="images/largefont.png" id="LargeImage" alt="LargeImage"> 
+                                </div>
+                            </div>
+                        </div> 
+
+                    <p>
+                        In combination with this, I have used a neutral, pastel colour palette to help colourblind people in seeing my webpage. I have not excessively used any extreme or bright colours, especially colour combinations that colourblind people typically find difficult to see such as red and greens and blues and purples. I chose to make the text on the navigation bar black on a light blue background, with only a red highlight on the active page. I purposely did this to cater for colourblind people who may not be able to navigate the navigation bar at all due to their colourblindness. Bright colours such as red are further also usually easy for visually impaired people to see due to their reflection of light, hence the decision to change the hover effect and active page element to a bright red colour. I further chose to use only black text on a pastel themed background in order to ensure that colourblind and people with other visual impairments do not have any issues with reading the text due to its colour. Below is an example of black text on a pastel coloured background from the index page:
+                    </p>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="aestheticimages">
+                                <img src="images/colourblindcatering.png" id="LargeImage" alt="LargeImage"> 
+                            </div>
+                        </div>
+                    </div> 
+
+                    <p>
+                        Finally, I have also used the "alt" feature on images in order to cater for visually impaired individuals who may be using a browser that does not display images, but rather listens to the browser reading elements from the screen. For example, images such as <code>&lt;img src="images/valentinoimg.png" id="IndexImgProperties" alt="ValentinoImage"&gt;</code> explain what the name of the file is, with "image" at the end to give a description of what type of element is being displayed on the screen. Without this feature, visually impaired people such as blind people will not know what is being displayed on the site as they cannot see it, or may have trouble seeing it, meaning that they could be missing out on potential information. The addition of <code>&lt;html lang="en"&gt;:</code> defines the browser languages as English, which can help text to speech software correctly interpret the text, leading to a lower change of error in pronunciation to visually impaired people.
+                    </p>
+
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+      
+        </main>
+      
+        <footer>
+          <h3> © University of Technology Sydney </h3>
+        </footer>
+      </body>
+      </html>
+
+    

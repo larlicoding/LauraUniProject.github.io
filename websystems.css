@@ -1,0 +1,386 @@
+/*----------------DEFAULT SETTINGS------------------*/
+* {
+    margin: 0; /* overwrites default margin browser setting of 8px */
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* will fix horizontal scrolling (x), also hides any elements flowing off the screen */
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*----------------INDEX CSS-----------------------*/
+
+/* Navbar styling */
+.index-navbar {
+    background-color: #e1f2f7;
+    width: 100%;
+    display: flex; /* enables flexbox layout allowing for hyperlinks and image position to be adjusted accordingly in rows. row is default*/
+    justify-content: space-between; /* spaces text and logo out evenly on the left and right */
+    align-items: center; /* puts text and uts logo in the middle of navbar */
+    padding: 10px 20px; /* space added inside of navbar */
+    flex-wrap: wrap; /* allows for text to wrap around the logo when there is no longer any space */
+    border-bottom: 2px solid #eb3a70; /* adds a border to the bottom of the navbar */
+}
+
+/* UTS Logo */
+
+.index-navbar .logo img {
+    width: 100px; /* image width */
+    height: 60px; /* image height */
+    object-fit: contain;
+    max-height: 100%; /* max height */
+}
+
+/* Navigation links */
+.index-navbar .nav-links {
+    list-style: none; /* gets rid of list numbers at the start of each word */
+    display: flex;
+}
+
+.index-navbar .nav-links li {
+    margin: 0 20px;
+    overflow-x: visible; /* in case the text overflows due to resize it will still display/override default settings */
+}
+
+.index-navbar .nav-links li a {
+    /* attributes for navbar hyperlinks */
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Segoe UI, sans-serif;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+}
+
+.index-navbar .nav-links #active {
+    color: #ef0d50;
+}
+
+.index-navbar .nav-links li a:hover {
+    color: #ef0d50;
+    transition: ease-in-out 0.5s;
+}
+
+
+.col .object3 {
+    background-color: #f7e6e1;
+    border-width: 5px;
+    border-color: #eb3a70;
+    border-radius: 50px;
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col .object3:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.5s;
+}
+
+.col .object3 #IndexImgProperties {
+    width: 50%;
+    flex-shrink: 0; /* this wont wrap the content, it will keep the image's size in retaining its width */
+    border-radius: 30px;
+    border-width: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 30px;
+}
+
+.col .object3 #InterestsImage {
+    width: 50%;
+    flex-shrink: 0; 
+    border-radius: 30px;
+    border-width: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 30px;
+}
+
+.col .object3 p {
+    font-size: 17px;
+    text-align: center;
+}
+
+/*--------------PAST / FUTURE PAGES CSS---------------------*/
+
+main {
+    width: 80%;
+}
+
+header {
+    background-color: #F7E1F2;
+    text-align: center;
+    padding: 25px;
+    font-family: sans-serif;
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section {
+    padding: 10px 0px 10px 0px;
+    /* vw = viewport width */
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section h2 {
+    padding: 15px 0px 15px 0px;
+    width: 100%; /* width to make childhood fit on top of text and align with its margin */
+    text-align: center;
+    font-family: Segoe UI, sans-serif;
+    font-weight: bold;
+}
+
+.section p {
+    font-family: Segoe UI, sans-serif;
+    font-size: large;
+}
+
+.section .ChildhoodParagraph {
+    margin-top: 20px;
+    font-size: 20px;
+    width: auto;
+    border-style: none;
+    flex: 1; /* allows the paragraph to take up the remaining space */
+}
+
+#supertuxImg {
+    max-width: 100%;
+    width: 50%;
+    border-radius: 30px;
+}
+
+
+.col {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.col1 {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+.row p {
+    padding: 20px;
+    
+}
+
+.col .object1 {
+    background-color: #F7E1F2;
+    border-width: 5px;
+    border-color: #eb3a70;
+    border-radius: 50px;
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col .object1:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.5s;
+}
+
+@media (max-width: 900px) {
+    .row {
+        flex-direction: column; /* at 900px the container layout will stack all rows into columns */
+    }
+
+
+
+    .main {
+        width: 100%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+}
+
+h1 {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin: 30px;
+}
+
+h2 {
+    overflow-y: hidden;
+}
+.col .object1 p {
+    padding: 0px 30px 30px 30px;
+    overflow-y: auto;
+}
+
+.object1 #jedi_proj_img {
+    width: 60%;
+    flex-shrink: 0; 
+    border-radius: 30px;
+    border-width: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+
+}
+
+.object1 #larlimontage {
+    width: 70%;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border-width: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+
+}
+
+footer {
+    background-color: #f7e6e1;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+    font-family: Segoe UI, sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+h3 {
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    text-align: center;
+    font-family: Segoe UI, sans-serif;
+    font-weight: bold;
+}
+
+
+
+/*---------------COMMENTS---------------------*/
+
+.col1 .commentsbox {
+    background-color: #f7e6e1;
+    border-width: 5px;
+    border-color: #f7e6e1;
+    border-radius: 50px;
+    margin: 10px;
+    height: auto;
+    width: 100%;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col1 commentsbox:hover {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: ease-in-out 0.5s;
+}
+
+
+h1 {
+    border-top-style: none;
+    border-bottom-style: none;
+    margin: 30px;
+}
+.col1 .commentsbox p {
+    padding: 0px 40px 40px 40px;
+    text-align: left;
+
+}
+
+
+.aestheticimages #ColorWheel {
+    width: 80%;
+    flex-shrink: 0; 
+    border-radius: 30px;
+    border-width: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 10px;
+    flex-direction: column;
+    font-family: Segoe UI, sans-serif;
+
+} 
+
+.aestheticimages #LargeImage {
+    width: 98%;
+    border-radius: 30px;
+    border-width: 50px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin: 10px;
+    flex-direction: column;
+    font-family: Segoe UI, sans-serif;
+
+} 
+
+
+
+.SiteStructure {
+    padding: 0px 40px 40px 40px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; 
+    border-width: 50px;
+}
+
+.SiteStructure tr th {
+    border: 1px solid;
+}
+
+.SiteStructure tr td {
+    border: 1px solid;
+    
+}
+
+.commentsmain {
+    width: 100%;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.13);
+    color: #194f5f;
+    border-radius: 7px;
+}
+
+.invisible {
+    opacity: 0%;
+}
+
+.flexboxexample {
+    background-color: #F7E1F2;
+    border-width: 5px;
+    border-color: #e5bace;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px 0px 15px 0px;
+    width: 100%; 
+    font-family: Segoe UI, sans-serif;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/*----------------------------------------------*/
